@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "0b4b76f4674f99d0ddf8a212b377b62d"
+name = "Rock"
+application_url = "https://graduation-widespread-zimbabwe-sample.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "crush-dev.myshopify.com"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_content,read_inventory,read_product_listings,read_products,write_content,write_customers,write_discounts,write_products"
+
+[auth]
+redirect_urls = [
+  "https://graduation-widespread-zimbabwe-sample.trycloudflare.com/auth/callback",
+  "https://graduation-widespread-zimbabwe-sample.trycloudflare.com/auth/shopify/callback",
+  "https://graduation-widespread-zimbabwe-sample.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
